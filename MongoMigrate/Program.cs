@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Driver;
 
 namespace MongoMigrate
 {
@@ -17,7 +18,9 @@ namespace MongoMigrate
 
         static async Task MainAsync(string[] args)
         {
-            
+            var settings = new MongoClientSettings();
+            var client = new MongoClient();
+
         }
     }
 }
